@@ -1,7 +1,7 @@
 class primitive_data_types{
     public static void main(String[] args){
         int num1 = 1;
-        byte num2 = 127;
+        byte num2 = 126;
         short num3 = 32766;
         long num4 = 234576423690L;
 
