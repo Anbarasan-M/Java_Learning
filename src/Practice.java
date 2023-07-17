@@ -1,9 +1,9 @@
-class conversion__casting__type_promotion{
+class Practice{
     public static void main(String []args)
     {
 //        Let's perform conversion (Directly converting elements into another datatype)
         byte a = 123;
-         int b = a;
+        int b = a;
         System.out.println(b);
 //        Let's perform casting    (Converting elements into another datatype by explicit conversion)
         int a1 = 23;
