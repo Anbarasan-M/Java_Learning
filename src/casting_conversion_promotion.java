@@ -1,4 +1,4 @@
-class Practice{
+class casting_conversion_promotion{
     public static void main(String []args)
     {
 //        Let's perform conversion (Directly converting elements into another datatype)
