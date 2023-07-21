@@ -1,4 +1,4 @@
-public class increment_decrement {
+class increment_decrement {
     public static void main(String[] args){
         int num = 7;
         int result = 0;
