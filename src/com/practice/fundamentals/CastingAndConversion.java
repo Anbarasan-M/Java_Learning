@@ -1,3 +1,5 @@
+package com.practice.fundamentals;
+
 class casting_conversion_promotion{
     public static void main(String []args)
     {
@@ -13,6 +15,7 @@ class casting_conversion_promotion{
         byte e = 12;
         byte r = 12;
         int t = e+r;
-        System.out.println(t);
+        System.out.println("test add::"+t);
     }
+
 }

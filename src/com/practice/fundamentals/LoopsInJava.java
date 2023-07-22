@@ -1,3 +1,5 @@
+package com.practice.fundamentals;
+
 class loops{
     public static void main(String[] args){
 //      While loop - Check if the condition is true then execute the statements

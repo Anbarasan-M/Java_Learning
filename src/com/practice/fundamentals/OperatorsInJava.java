@@ -1,3 +1,5 @@
+package com.practice.fundamentals;
+
 class operators{
     public static void main(String [] args){
         int x = 5;
