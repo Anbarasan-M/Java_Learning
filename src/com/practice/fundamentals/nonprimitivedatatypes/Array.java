@@ -1,4 +1,4 @@
-package com.practice.nonprimitivedatatypes;
+package com.practice.fundamentals.nonprimitivedatatypes;
 
 public class Array
 {
