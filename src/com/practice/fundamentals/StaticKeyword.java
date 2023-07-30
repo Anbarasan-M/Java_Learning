@@ -13,7 +13,7 @@ class Mobile
 //    Creating a method without static variable
     public void show()
     {
-        System.out.println(name + " " + price + " "+ generation);
+        System.out.println("Show method is called here");
     }
 //    Creating a method with static variable
     public static void show1(Mobile obj)
@@ -23,12 +23,16 @@ class Mobile
 //        But with object reference it is possible
         System.out.println(name + " "+ obj.price+ " "+obj.generation);
     }
+    static
+    {
+        name = "Oppo Find X";
+        System.out.println("Static called and it will be called only once");
+    }
 
 }
 public class StaticKeyword
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws ClassNotFoundException {
         Mobile obj1 = new Mobile();
 //We changed the name variable to static one, so it can be represented with the help of class itself like ( Mobile.name instead of obj1.name)
 
@@ -49,5 +53,6 @@ public class StaticKeyword
 
         Mobile.show1(obj1);
 //We can directly create object when static variable is used
+        Class.forName("com.practice.fundamentals.Mobile");
     }
 }
