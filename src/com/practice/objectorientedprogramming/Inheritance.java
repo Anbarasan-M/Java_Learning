@@ -12,7 +12,7 @@ class calc
     }
 }
 
-class AdCalc extends calc // Single Level
+class AdCalc extends calc // Single Level Inheritance
 {
     public int mul(int x, int y)
     {
@@ -23,7 +23,7 @@ class AdCalc extends calc // Single Level
         return x/y;
     }
 }
-class MostAdCalc extends AdCalc
+class MostAdCalc extends AdCalc // Multilevel Inheritance
 {
     public double power( int x, int y)
     {
