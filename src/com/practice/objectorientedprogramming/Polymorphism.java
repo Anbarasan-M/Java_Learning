@@ -20,11 +20,12 @@ public class Polymorphism {
     public static void main(String [] args)
     {
        Parent obj = new Parent();
+       obj.show();
 
        obj = new Child();
+       obj.show();
 
        obj = new GrandChild();  // based on instance creation, characteristics changed. It is polymorphism
-
        obj.show();
     }
 }

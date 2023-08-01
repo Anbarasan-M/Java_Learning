@@ -1,6 +1,6 @@
 package com.practice.objectorientedprogramming;
 
-class Calc
+class Calc1
 {
     int x = 2;
     int y = 4;
@@ -9,7 +9,7 @@ class Calc
         return x + y;
     }
 }
-class AdvCalc extends Calc
+class AdvCalc extends Calc1
 {
     public int add()
     {
