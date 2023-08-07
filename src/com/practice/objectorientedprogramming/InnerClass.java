@@ -10,7 +10,7 @@ class OuterClass{
         System.out.println("obj in oc");
     }
 
-    static class InnerClass{
+    static class InnerClass{   // it is a class inside a class, and it should be static for ease of access
         public void icSample(){
             System.out.println("obj in ic");
         }
@@ -22,7 +22,7 @@ public class InnerClass {
         OuterClass obj = new OuterClass();
         obj.ocSample();
 
-        OuterClass.InnerClass obj1 = new OuterClass.InnerClass();
+        OuterClass.InnerClass obj1 = new OuterClass.InnerClass(); // By this way we can access the method inside an inner class
         obj1.icSample();
     }
 }
