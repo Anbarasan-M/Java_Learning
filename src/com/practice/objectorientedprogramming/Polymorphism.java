@@ -7,6 +7,9 @@ class Parent
     {
         System.out.println("In parent");
     }
+
+    public void config() {
+    }
 }
 class Child extends Parent
 {
