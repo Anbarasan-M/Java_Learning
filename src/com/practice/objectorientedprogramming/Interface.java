@@ -3,11 +3,12 @@ package com.practice.objectorientedprogramming;
 // class to class --> extends
 // interface to class --> implements
 // interface to interface --> extends
-interface AA
+interface Aa
 {
-    int price = 1000;  //By default, the variables are static and final here
-    String name = "iphone";
+    int price = 1000;        //By default, the variables are static and final here
+    String name = "iphone";  //we have to initialize it here
 
+    // Inside interface every method is a public abstract method by default
     void show();
     void config();
 }
@@ -22,7 +23,8 @@ interface Y extends X
 
 }
 
-class BB implements AA, Y // implement is the keyword for  inheritance here --> Multiole inheritance is supported in interface
+//You have to define all the methods in interface to a class otherwise the class become abstract class
+class Bb implements Aa, Y // implement is the keyword for  inheritance here --> Multiole inheritance is supported in interface
 {
     public void show(){
         System.out.println("In show");
@@ -39,12 +41,17 @@ public class Interface{
 
     public static void main(String []args){
         // A obj = new A() //cannot instantiate interface
-        AA obj;
-        obj = new BB();
+
+        Aa obj;
+        obj = new Bb();
         obj.show();
         obj.config();
+
+
         // we cannot call it with obj
-        X obj1 = (X) new B();
-        obj1.run();
+//        X obj1 = (X) new B();
+//        obj1.run();
+
+
     }
 }
