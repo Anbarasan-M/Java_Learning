@@ -9,7 +9,7 @@ class Calculators
     }
 }
 
-class java_class
+class JavaClass
 {
     public static void main(String[] args)
     {

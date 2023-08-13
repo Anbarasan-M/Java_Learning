@@ -10,6 +10,7 @@ public class Enumerate
     {
         Status s = Status.Running;
         System.out.println(s);
+        System.out.println(s.ordinal());
 
         // for loop in enum
         Status [] ss = Status.values();
@@ -21,13 +22,19 @@ public class Enumerate
         // switch in enum
         switch (s){
             case Failed:
-                System.out.println("Try again");
+                System.out.println("failed Try again");
+                break;
             case Running:
-            System.out.println("Try again");
+                System.out.println("Working on it");
+                break;
             case Pending:
-            System.out.println("Try again");
+                System.out.println("Maybe later");
+                break;
+            case Success:
+                System.out.println("Mission accomplished");
+                break;
             default:
-            System.out.println("Try again");
+                System.out.println("Try again");
         }
     }
 }

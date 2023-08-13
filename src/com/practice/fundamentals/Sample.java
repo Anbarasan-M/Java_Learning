@@ -1,9 +1,10 @@
 package com.practice.fundamentals;
-
+import java.util.Scanner;
 
 public class Sample{
-    public static void main(String[] args){
-        int i = 9;
-        int j = 10;
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
     }
 }
