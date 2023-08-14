@@ -15,5 +15,9 @@ class increment_decrement {
 
         result += num;
         System.out.println(result);
+
+        int n1 = 1; int n2 = 2;
+        int result1 = n1++ + n2 + ++n1;
+        System.out.println(result1);
     }
 }

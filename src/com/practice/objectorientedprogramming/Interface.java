@@ -8,7 +8,7 @@ interface Aa
     int price = 1000;        //By default, the variables are static and final here
     String name = "iphone";  //we have to initialize it here
 
-    // Inside interface every method is a public abstract method by default
+    // Every method is a public interface in abstract
     void show();
     void config();
 }
