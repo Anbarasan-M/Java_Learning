@@ -30,10 +30,14 @@ package com.practice.fundamentals;//package com.practice.fundamentals;
 //    }
 //}
 
+import java.util.Scanner;
+
 public class Sample
 {
     public static void main(String[] args)
     {
-        System.out.println(18/20);
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println(num);
     }
 }
