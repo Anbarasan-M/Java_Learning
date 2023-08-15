@@ -32,6 +32,6 @@ public class TakingInput
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        System.out.println("This is the given number" + " " +num);
+        System.out.println("The given number is  " +num);
     }
 }
