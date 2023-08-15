@@ -1,25 +1,32 @@
 package com.practice.fundamentals;
 
+class MyException extends Exception     // creating own exception
+{
+    public MyException(String string)
+    {
+        super(string);
+    }
+}
 public class Throw {
     public static void main(String[]args)
     {
-        int i = 0;
-        int j = 0;
+        int i = 18;
+        int j = 20;
 
         try
         {
-            j = i/j;
-            if (j==0)
-                throw new ArithmeticException("THis is throw"); // throw pushes an exception itself
+            i = i /j;
+            if (i == 0)
+                throw new MyException("Don't want to print Zero"); // object for our own exception
+        }
+        catch(MyException e)
+        {
+            i = i / 1;
+            System.out.println(i + " This is in catch  " + e); // this e will show the kind of exception
         }
         catch (ArithmeticException e)
         {
-            j = i/1;
-            System.out.println("Arithmetic error " +  e);
-        }
-        catch (Exception e)
-        {
-            System.out.println("Something went wrong");
+            System.out.println("This will catch arithmetic exception");
         }
     }
 }

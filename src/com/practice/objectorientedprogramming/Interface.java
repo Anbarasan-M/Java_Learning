@@ -24,7 +24,7 @@ interface Y extends X
 }
 
 //You have to define all the methods in interface to a class otherwise the class become abstract class
-class Bb implements Aa, Y // implement is the keyword for  inheritance here --> Multiole inheritance is supported in interface
+class Bb implements Aa, Y // implement is the keyword for  inheritance here --> Multiple inheritance is supported in interface
 {
     public void show(){
         System.out.println("In show");
