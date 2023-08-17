@@ -8,6 +8,7 @@ public class MapCollection
     public static void main(String[] args)
     {
         Map<String, Integer> students = new HashMap<>();
+//        When multiple threads are working, it is better to use hash table because it is synchronized. They provide similar output
 
         students.put("Anbarasan", 21);
         students.put("Abishek", 28);
