@@ -96,34 +96,34 @@ package com.practice.fundamentals;//package com.practice.fundamentals;
 //        System.out.println(c.count);
 //    }
 //}
-
-class Thread1 extends Thread
-{
-    public void run()
-    {
-        System.out.println("THis is in a thread");
-        try {
-            Thread.sleep(10);   // It will delay the execution by 10 milliseconds
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-}
-class Thread2 extends Thread
-{
-    public void run()
-    {
-        System.out.println("This is in second thread");
-    }
-}
+//
+//class Thread1 extends Thread
+//{
+//    public void run()
+//    {
+//        System.out.println("THis is in a thread");
+//        try {
+//            Thread.sleep(10);   // It will delay the execution by 10 milliseconds
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
+//}
+//class Thread2 extends Thread
+//{
+//    public void run()
+//    {
+//        System.out.println("This is in second thread");
+//    }
+//}
 public class Sample{
     public static void main(String [] args){
-
-        Thread1 obj1 = new Thread1();
-        Thread2 obj2 = new Thread2();
-
-        obj1.start();
-        obj2.start();
-
+//
+//        Thread1 obj1 = new Thread1();
+//        Thread2 obj2 = new Thread2();
+//
+//        obj1.start();
+//        obj2.start();
+//
     }
 }
