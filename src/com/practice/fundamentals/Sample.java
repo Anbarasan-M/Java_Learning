@@ -59,6 +59,8 @@ package com.practice.fundamentals;//package com.practice.fundamentals;
 //    }
 //}
 
+import java.util.Collections;
+
 //class Counter
 //{
 //    int count;
@@ -124,6 +126,7 @@ public class Sample{
 //
 //        obj1.start();
 //        obj2.start();
+
 //
     }
 }

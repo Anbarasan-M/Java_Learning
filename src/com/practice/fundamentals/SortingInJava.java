@@ -16,15 +16,17 @@ public class SortingInJava
                     return -1;
             }
         };
+        Set<Integer> integers = new TreeSet<Integer>();
 
-        List<Integer> nums = new ArrayList<>();
-        nums.add(12);
-        nums.add(81);
-        nums.add(27);
-        nums.add(85);
+        integers.add(12);
+        integers.add(81);
+        integers.add(27);
+        integers.add(85);
+        integers.add(85);
 
-//        Collections.sort(nums, comp); This line is replaced by the following line
-        nums.sort(comp);
-        System.out.println(nums);
+        List<Integer> integers1 = new ArrayList<>(integers);
+        Collections.sort(integers1);// This line is replaced by the following line
+        integers1.sort(comp);
+        System.out.println(integers);
     }
 }
