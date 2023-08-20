@@ -1,6 +1,7 @@
-package com.practice.fundamentals;
+package com.practice.collection;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListCollection
 {
