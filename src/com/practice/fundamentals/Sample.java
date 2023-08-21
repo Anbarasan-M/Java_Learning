@@ -1,4 +1,5 @@
 package com.practice.fundamentals;//package com.practice.fundamentals;
+import java.util.Arrays;
 //
 //interface Computer1{
 //    void code();
@@ -123,23 +124,23 @@ import java.util.List;
 //}
 public class Sample{
     public static void main(String [] args){
-        int target = 7;
-
-        List<Integer> result = new ArrayList<>();
-        int [] ans = {0, 0};
-
-        int[] arr = {1, 2, 4, 5, 21, 3, 12};
-        for(int i = 0; i < arr.length; i ++){
-            for (int j = i+1; j < arr.length; j ++)
-            {
-                if (arr[i] + arr[j] == target)
-                {
-                    ans[0] = i;
-                    ans[1] = j;
-                    break;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(ans));
+//        int target = 7;
+//
+//        List<Integer> result = new ArrayList<>();
+//        int [] ans = {0, 0};
+//
+//        int[] arr = {1, 2, 4, 5, 21, 3, 12};
+//        for(int i = 0; i < arr.length; i ++){
+//            for (int j = i+1; j < arr.length; j ++)
+//            {
+//                if (arr[i] + arr[j] == target)
+//                {
+//                    ans[0] = i;
+//                    ans[1] = j;
+//                    break;
+//                }
+//            }
+//        }
+//        System.out.println(Arrays.toString(ans));
     }
 }
