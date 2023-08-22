@@ -5,7 +5,7 @@ class Node
     int data;
     Node next;
 }
-class LinkedList
+public class LinkedList
 {
     Node head;
 
@@ -43,7 +43,7 @@ class LinkedList
         System.out.println(node.data);
     }
 }
-public class Runner
+class Runner
 {
     public static void main(String [] args)
     {

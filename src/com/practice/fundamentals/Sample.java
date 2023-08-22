@@ -1,4 +1,6 @@
 package com.practice.fundamentals;//package com.practice.fundamentals;
+import sun.java2d.pipe.SolidTextRenderer;
+
 import java.util.Arrays;
 //
 //interface Computer1{
@@ -122,8 +124,8 @@ import java.util.List;
 //        System.out.println("This is in second thread");
 //    }
 //}
-public class Sample{
-    public static void main(String [] args){
+//public class Sample{
+//    public static void main(String [] args){
 //        int target = 7;
 //
 //        List<Integer> result = new ArrayList<>();
@@ -142,5 +144,87 @@ public class Sample{
 //            }
 //        }
 //        System.out.println(Arrays.toString(ans));
+//    }
+//}
+
+
+//Linked list
+//class Node
+//{
+//    int data;
+//    Node next;
+//}
+//class LinkList
+//{
+//    Node head;
+//
+//    public void insert(int data)
+//    {
+//        Node node = new Node();
+//
+//        node.data = data;
+//        node.next = null;
+//
+//        if (head == null)
+//        {
+//            head = node;
+//        }
+//        else
+//        {
+//            Node n = head;
+//
+//            while(n.next != null)
+//            {
+//                n = n.next;
+//            }
+//            n.next = node;
+//        }
+//    }
+//    public void show()
+//    {
+//        Node node = head;
+//
+//        while (node.next != null)
+//        {
+//            System.out.println(node.data);
+//            node = node.next;
+//        }
+//        System.out.println(node.data);
+//    }
+//}
+//public class Sample
+//{
+//    public static void main(String[] args)
+//    {
+//        LinkList list = new LinkList();
+//
+//        list.insert(45);
+//        list.insert(43);
+//        list.insert(42);
+//        list.insert(41);
+//
+//        list.show();
+//    }
+//}
+
+public class Sample{
+    public static void main(String[] args)
+    {
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
