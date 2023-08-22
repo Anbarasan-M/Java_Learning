@@ -9,7 +9,7 @@ public class LinkedList
 {
     Node head;
 
-    public void inset(int data)
+    public void insert(int data)
     {
         Node node = new Node();
 
@@ -31,6 +31,35 @@ public class LinkedList
             n.next = node;
         }
     }
+    public void insertAtStart(int data)
+    {
+        Node node = new Node();
+
+        node.data = data;
+        node.next = head;
+
+        head = node;
+
+    }
+    public void insertAt(int index, int data)
+    {
+        Node node = new Node();
+
+        node.data = data;
+        node.next = null;
+
+        Node n = head;
+        if (index == 0)
+        {
+            insertAtStart(data);
+        }
+        for (int i = 0; i < index -1; i++)
+        {
+            n = n.next;
+        }
+        node.next = n.next;
+        n.next = node;
+    }
     public void show()
     {
         Node node = head;
@@ -48,11 +77,14 @@ class Runner
     public static void main(String [] args)
     {
         LinkedList list = new LinkedList();
-        list.inset(21);
-        list.inset(2);
-        list.inset(34);
-        list.inset(98);
+        list.insert(21);
+        list.insert(2);
+        list.insert(34);
+        list.insert(98);
+        list.insertAtStart(245);
+        list.insertAt(3, 56);
 
         list.show();
+
     }
 }

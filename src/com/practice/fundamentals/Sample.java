@@ -1,4 +1,6 @@
 package com.practice.fundamentals;//package com.practice.fundamentals;
+import com.practice.collection.LinkedList;
+import sun.awt.image.ImageWatched;
 import sun.java2d.pipe.SolidTextRenderer;
 
 import java.util.Arrays;
@@ -206,25 +208,60 @@ import java.util.List;
 //        list.show();
 //    }
 //}
+class Node
+{
+    int data;
+    Node next;
+}
+class LinkList
+{
+    Node head;
 
-public class Sample{
-    public static void main(String[] args)
+    public void insert(int data)
     {
+        Node node = new Node();
 
+        node.data = data;
+        node.next = null;
+
+        if (head == null)
+        {
+            head = node;
+        }
+        else
+        {
+            Node n = head;
+
+            while (n.next != null)
+            {
+                n = n.next;
+            }
+            n.next = node;
+        }
+    }
+    public void show()
+    {
+        Node node = head;
+
+        while (node.next != null)
+        {
+            System.out.println(node.data);
+            node = node.next;
+        }
+        System.out.println(node.data);
     }
 }
 
+public class Sample
+{
+    public static void main(String[] args)
+    {
+        LinkList list = new LinkList();
+        list.insert(21);
+        list.insert(2);
+        list.insert(34);
+        list.insert(98);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        list.show();
+    }
+}
