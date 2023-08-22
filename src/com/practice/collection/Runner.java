@@ -9,7 +9,7 @@ class LinkedList
 {
     Node head;
 
-    public void insert(int data)
+    public void inset(int data)
     {
         Node node = new Node();
 
@@ -23,6 +23,7 @@ class LinkedList
         else
         {
             Node n = head;
+
             while (n.next != null)
             {
                 n = n.next;
@@ -47,9 +48,10 @@ public class Runner
     public static void main(String [] args)
     {
         LinkedList list = new LinkedList();
-        list.insert(3);
-        list.insert(4);
-        list.insert(5);
+        list.inset(21);
+        list.inset(2);
+        list.inset(34);
+        list.inset(98);
 
         list.show();
     }
