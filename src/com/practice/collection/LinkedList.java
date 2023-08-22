@@ -53,12 +53,33 @@ public class LinkedList
         {
             insertAtStart(data);
         }
-        for (int i = 0; i < index -1; i++)
-        {
-            n = n.next;
+        else {
+            for (int i = 0; i < index - 1; i++) {
+                n = n.next;
+            }
+            node.next = n.next;
+            n.next = node;
         }
-        node.next = n.next;
-        n.next = node;
+    }
+    public void delete(int index)
+    {
+        if (index == 0)
+        {
+            head = head.next;
+        }
+        else
+        {
+            Node n = head;
+            Node n1 = null;
+            for (int i = 0; i < index-1; i ++)
+            {
+                n = n.next;
+            }
+            n1 = n.next;
+            n.next = n1.next;
+        }
+
+
     }
     public void show()
     {
@@ -84,6 +105,7 @@ class Runner
         list.insertAtStart(245);
         list.insertAt(3, 56);
 
+        list.delete(3);
         list.show();
 
     }
