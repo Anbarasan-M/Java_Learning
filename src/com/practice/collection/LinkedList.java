@@ -57,6 +57,7 @@ public class LinkedList
             for (int i = 0; i < index - 1; i++) {
                 n = n.next;
             }
+            System.out.println(n.data + "This should be watched");
             node.next = n.next;
             n.next = node;
         }
@@ -92,6 +93,29 @@ public class LinkedList
         }
         System.out.println(node.data);
     }
+    public void sumOfNodes()
+    {
+        int ans = 0;
+        Node node = head;
+
+        while(node.next != null)
+        {
+            ans += node.data;
+            node = node.next;
+        }
+        ans += node.data;
+        System.out.println(ans);
+    }
+    public Node middleOfLinkedList(LinkedList list)
+    {
+        Node slow = head, fast = head;
+        while (fast != null && fast.next != null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
 }
 class Runner
 {
@@ -102,11 +126,14 @@ class Runner
         list.insert(2);
         list.insert(34);
         list.insert(98);
-        list.insertAtStart(245);
-        list.insertAt(3, 56);
+        list.insertAt(0, 1);
 
-        list.delete(3);
+        list.delete(2);
         list.show();
+
+        list.sumOfNodes();
+        Node ans = list.middleOfLinkedList(list);
+        System.out.println("Middle node: " + ans.data);
 
     }
 }

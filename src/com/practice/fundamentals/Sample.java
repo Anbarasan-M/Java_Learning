@@ -265,64 +265,59 @@ import java.util.List;
 //        list.show();
 //    }
 //}
-class Node {
-    int data;
-    Node next;
-}
-class LinkList {
-    Node head;
+//class Node {
+//    int data;
+//    Node next;
+//}
+//class LinkList {
+//    Node head;
+//
+//    public void insert(int data) {
+//        Node node = new Node();
+//
+//        node.data = data;
+//        node.next = null;
+//
+//
+//        if (head == null) {
+//            head = node;
+//        }
+//        else {
+//            Node n = head;
+//
+//            while (n.next != null)
+//            {
+//                n = n.next;
+//            }
+//            n.next = node;
+//        }
+//    }
+//
+//    public void show() {
+//        Node node = head;
+//        while (node.next != null) {
+//            System.out.println(node.data);
+//            node = node.next;
+//        }
+//        System.out.println(node.data);
+//    }
+//    public void sum()
+//    {
+//        Node node = head;
+//        int count = 0;
+//
+//        while (node.next != null)
+//        {
+//            count += node.data;
+//            node = node.next;
+//        }
+//        System.out.println(count + node.data);
+//    }
+//}
 
-    public void insert(int data) {
-        Node node = new Node();
 
-        node.data = data;
-        node.next = null;
-
-
-        if (head == null) {
-            head = node;
-        }
-        else {
-            Node n = head;
-
-            while (n.next != null)
-            {
-                n = n.next;
-            }
-            n.next = node;
-        }
-    }
-
-    public void show() {
-        Node node = head;
-        while (node.next != null) {
-            System.out.println(node.data);
-            node = node.next;
-        }
-        System.out.println(node.data);
-    }
-    public void sum()
-    {
-        Node node = head;
-        int count = 0;
-
-        while (node.next != null)
-        {
-            count += node.data;
-            node = node.next;
-        }
-        System.out.println(count + node.data);
-    }
-}
 public class Sample {
     public static void main(String[] args) {
-        LinkList list = new LinkList();
 
-        list.insert(12);
-        list.insert(34);
-        list.insert(45);
-
-        list.show();
-        list.sum();
     }
 }
