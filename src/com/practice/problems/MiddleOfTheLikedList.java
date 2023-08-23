@@ -45,8 +45,5 @@ public class MiddleOfTheLikedList
         list.insert(4);
         list.insert(5);
 
-        Node node = new Node();
-
-
     }
 }
