@@ -24,6 +24,7 @@ public class ListCollection
         System.out.println(array.get(0));
         System.out.println(array.indexOf(6));
         System.out.println(Arrays.toString(array.toArray()));
+        System.out.println(array);
 
     }
 }

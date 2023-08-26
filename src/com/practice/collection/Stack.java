@@ -53,16 +53,15 @@ class Run
         stack.push(15);
         stack.push(20);
         stack.push(12);
-        stack.push(12);
 
 
 
-        int pop_element = stack.pop();
+        int popElement = stack.pop();
         stack.pop();
 
         int peek_element = stack.peek();
 
-        System.out.println(pop_element);
+        System.out.println(popElement);
         System.out.println(peek_element);
         System.out.println(stack.size());
         stack.show();
