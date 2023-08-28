@@ -1,6 +1,6 @@
 package com.practice.fundamentals;
 
-class Calculator{
+class Calculator1{
     public int addNum(int n1, int n2)
     {
         return n1 + n2;
@@ -18,7 +18,7 @@ public class MoreAboutMethods
 {
     public static void main(String[] args)
     {
-        Calculator calc = new Calculator();
+        Calculator1 calc = new Calculator1();
         double ans = calc.addNum(3.4, 5);
         System.out.println(ans);
     }

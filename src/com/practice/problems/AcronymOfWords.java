@@ -5,12 +5,12 @@ import java.util.List;
 
 class AOWSolution {
     public boolean isAcronym(List<String> words, String s) {
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
         for (String i:words){
             char j = i.charAt(0);
-            ans += j;
+            ans.append(j);
         }
-        return ans.equals(s);
+        return ans.toString().equals(s);
     }
 }
 public class AcronymOfWords {
