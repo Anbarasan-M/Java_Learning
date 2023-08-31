@@ -1,7 +1,6 @@
 package com.practice.collection;
 
-public class Stack
-{
+public class StackImplementation {
     int [] stack = new int [5];
     int top = 0;
 
@@ -46,7 +45,7 @@ class Run
 {
     public static void main(String[] args)
     {
-        Stack stack = new Stack();
+        StackImplementation stack = new StackImplementation();
 
         stack.push(5);
         stack.push(10);
