@@ -15,6 +15,7 @@ public class MapCollection
         students.put("Kathir", 81);
         students.put("Kumaravel", 91);
         students.put("Gopal", 51);
+        students.put("Gopal", 12);
 
         System.out.println(students.keySet());
 
