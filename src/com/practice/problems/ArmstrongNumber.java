@@ -13,7 +13,7 @@ public class ArmstrongNumber {
         num = org; // Reset num to the original value
         while (org != 0) {
             int dig = org % 10;
-            ans += Math.pow(dig, count); // Calculate dig^count and add to ans
+            ans += dig*count; // Calculate dig^count and add to ans
             org = org / 10;
         }
 
