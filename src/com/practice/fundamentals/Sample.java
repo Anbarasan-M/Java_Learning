@@ -1,19 +1,17 @@
 package com.practice.fundamentals;
 import java.sql.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class Sample{
-    public static void main(String[] args){
-        int i = 18;
-        int j = 0;
-
-        try{
-            j = i/j;
-            if(j==0)
-                throw new ArithmeticException("Don't want to print zero");
-            }
-        catch (ArithmeticException e){
-            j = i/1;
-            System.out.println("this will be printed " + j);
-        }
+public class Sample extends Thread{
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("Enter numbers:");
+        int n = 10;
+       Scanner sc = new Scanner(System.in);
+       int[] arr = new int[n];
+       for(int i=0; i<10; i++){
+            arr[i] = sc.nextInt();
+       }
+       System.out.println(Arrays.toString(arr));
     }
 }
