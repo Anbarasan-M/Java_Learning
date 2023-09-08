@@ -1,8 +1,8 @@
 package com.practice.problems;
 import java.util.Scanner;
 
-public class RatCountHouse {
-    public static void main(String[] args){
+public class ACCRatCountHouse extends Thread {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Number of rats r");
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
@@ -28,6 +28,7 @@ public class RatCountHouse {
                 break;
             }
         }
-        System.out.println(count);
+        Thread.sleep(500);
+        System.out.println("Output " + count);
     }
 }

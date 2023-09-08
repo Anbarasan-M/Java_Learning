@@ -1,17 +1,34 @@
 package com.practice.fundamentals;
-import java.sql.*;
-import java.util.Arrays;
-import java.util.Scanner;
 
-public class Sample extends Thread{
-    public static void main(String[] args) throws InterruptedException {
-        System.out.println("Enter numbers:");
-        int n = 10;
-       Scanner sc = new Scanner(System.in);
-       int[] arr = new int[n];
-       for(int i=0; i<10; i++){
-            arr[i] = sc.nextInt();
-       }
-       System.out.println(Arrays.toString(arr));
+import java.util.*;
+class Main
+{
+    public static int operationsBinaryString (String str)
+    {
+        if (str == null)
+            return -1;
+        int res = str.charAt (0) - '0';   //1C0C1C1A0B1
+        for (int i = 1; i < str.length ();)
+        {
+            char prev = str.charAt (i);
+            i++;
+            if (prev == 'A')
+                res = res & (str.charAt (i) - '0');
+            else if (prev == 'B')
+                res = res | (str.charAt (i) - '0');
+            else
+                res = res ^ (str.charAt (i) - '0');
+            i++;
+        }
+        return res;
+    }
+    public static void main (String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        String str = sc.next ();
+        System.out.println (operationsBinaryString (str));
+        char i = '0';
+        char j = '1';
+        System.out.println(j-1);
     }
 }
