@@ -2,7 +2,7 @@ package com.practice.problems;
 
 import java.util.Scanner;
 
-public class ACCAbsoluteDifference {
+public class AccAbsoluteDifference {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter diff");

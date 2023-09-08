@@ -1,34 +1,21 @@
 package com.practice.fundamentals;
 
-import java.util.*;
+import java.lang.*;
 class Main
 {
-    public static int operationsBinaryString (String str)
+    public static void main(String[] args)
     {
-        if (str == null)
-            return -1;
-        int res = str.charAt (0) - '0';   //1C0C1C1A0B1
-        for (int i = 1; i < str.length ();)
-        {
-            char prev = str.charAt (i);
-            i++;
-            if (prev == 'A')
-                res = res & (str.charAt (i) - '0');
-            else if (prev == 'B')
-                res = res | (str.charAt (i) - '0');
-            else
-                res = res ^ (str.charAt (i) - '0');
-            i++;
-        }
-        return res;
-    }
-    public static void main (String[]args)
-    {
-        Scanner sc = new Scanner (System.in);
-        String str = sc.next ();
-        System.out.println (operationsBinaryString (str));
-        char i = '0';
-        char j = '1';
-        System.out.println(j-1);
+//        int a = -12;
+//        int b = 5;
+//        int c = 55;
+//
+//        System.out.println(b^c);
+//        System.out.println(Math.abs(a));
+
+        int a = 9;
+        int b = 3;
+        System.out.println(a != b);
+
+
     }
 }

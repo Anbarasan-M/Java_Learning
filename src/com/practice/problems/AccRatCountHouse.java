@@ -1,7 +1,7 @@
 package com.practice.problems;
 import java.util.Scanner;
 
-public class ACCRatCountHouse extends Thread {
+public class AccRatCountHouse extends Thread {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Number of rats r");
         Scanner sc = new Scanner(System.in);
