@@ -5,17 +5,16 @@ public class AccSumOfSecondLargestAndSecondSmallest {
         int[] arr = {13, 5, 7, 22, 1, 9, 10};
         int max = Integer.MIN_VALUE;
         int second_max = Integer.MIN_VALUE;
-        for (int k : arr) {
-            if (k > max) {
-                second_max = max;
-                max = k;
-            } else if (k > second_max && k != max) {
-                second_max = k;
-            }
-        }
         int min = Integer.MAX_VALUE;
         int second_min = Integer.MAX_VALUE;
         for (int j : arr) {
+            if (j > max) {
+                second_max = max;
+                max = j;
+            } else if (j > second_max && j != max) {
+                second_max = j;
+            }
+
             if (j < min) {
                 second_min = min;
                 min = j;
