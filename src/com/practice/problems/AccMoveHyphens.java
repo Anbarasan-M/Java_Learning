@@ -1,6 +1,6 @@
 package com.practice.problems;
 
-public class AccNBaseNotation {
+public class AccMoveHyphens {
     public static void main(String[] args){
 
         String string = "Move-Hyphens-to-Front";
