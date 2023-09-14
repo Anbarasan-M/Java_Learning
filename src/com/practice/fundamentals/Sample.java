@@ -6,10 +6,11 @@ public class Sample
     public static void main(String[] args)
 
     {
-       int b = 12;
-       int h = 34;
+        float a = 22;
+        float b = 7;
 
-       System.out.println( (int) (0.5*(b*h)));
+
+       System.out.println(a/b);
     }
 
 }
