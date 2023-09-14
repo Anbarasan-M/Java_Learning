@@ -6,9 +6,10 @@ public class Sample
     public static void main(String[] args)
 
     {
-        boolean[] list = new boolean[5];
-        for(int i =0; i<list.length; i++){
-        System.out.println(list[0]);}
+       int b = 12;
+       int h = 34;
+
+       System.out.println( (int) (0.5*(b*h)));
     }
 
 }
