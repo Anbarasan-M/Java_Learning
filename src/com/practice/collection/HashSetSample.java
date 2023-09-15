@@ -2,7 +2,7 @@ package com.practice.collection;
 import java.util.Iterator;
 import java.util.Set;
 
-public class HashSet
+public class HashSetSample
 {
     public static void main(String [] args)
     {
