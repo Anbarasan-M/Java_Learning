@@ -1,6 +1,8 @@
 package com.practice.JDBCConnection;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class JavaObjectConversion {
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class JavaObjectConversion {
 
             ResultSet rs = st.executeQuery("select * from employees");
 
+            List<Employee> employeeList = new ArrayList<>();
             while (rs.next()) {
                 Employee employee = new Employee();
                 employee.setId(rs.getInt(1));
@@ -22,9 +25,12 @@ public class JavaObjectConversion {
                 employee.setPhoneNumber(rs.getString(5));
                 employee.setHireDate(rs.getString(6));
 
+                employeeList.add(employee);
                 // Now you have an Employee object representing the current row in the ResultSet
                 System.out.println(employee.getId() + " " + employee.getFirstName() + " " + employee.getLastName() + " " + employee.getEmail() + " " + employee.getPhoneNumber() + " " + employee.getHireDate());
             }
+
+            System.out.println(employeeList);
             con.close();
             st.close();
 
