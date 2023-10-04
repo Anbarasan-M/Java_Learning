@@ -32,8 +32,8 @@ package com.practice.fundamentals;
 public class Sample {
     public static void main(String[] args) {
 
-        int n = 123;
-        String m = Integer.toString(n);
+        String s = Integer.toString(98+2);
+        System.out.println(s);
 
 
     }
