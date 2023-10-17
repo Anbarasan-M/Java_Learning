@@ -1,6 +1,12 @@
 package com.practice.problems;
-class CTDTDANSolution{
-    public int countDigits(int num) {
+
+public class CountTheDigitsThatDivideANumber {
+    public static void main(String[] args){
+
+        int result = CountTheDigitsThatDivideANumber.countDigits(1248);
+        System.out.println(result);
+    }
+    public static int countDigits(int num) {
         int count = 0;
         int temp = num;
         while(num!=0){
@@ -11,13 +17,5 @@ class CTDTDANSolution{
             num = num/10;
         }
         return count;
-    }
-}
-public class CountTheDigitsThatDivideANumber {
-    public static void main(String[] args){
-
-        CTDTDANSolution obj = new CTDTDANSolution();
-        int result = obj.countDigits(1248);
-        System.out.println(result);
     }
 }

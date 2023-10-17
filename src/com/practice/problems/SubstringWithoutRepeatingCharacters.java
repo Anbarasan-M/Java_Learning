@@ -2,8 +2,14 @@ package com.practice.problems;
 
 import java.util.HashMap;
 
-class SWRCSolution {
-    public int lengthOfLongestSubstring(String s) {
+public class SubstringWithoutRepeatingCharacters {
+        public static void main(String[] args){
+
+            int result = SubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("asdfghhhqwerty");
+            System.out.println(result);
+
+        }
+    public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         int max = 0;
@@ -17,14 +23,5 @@ class SWRCSolution {
         return max;
 
     }
-}
-public class SubstringWithoutRepeatingCharacters {
-        public static void main(String[] args){
-
-            SWRCSolution obj = new SWRCSolution();
-            int result = obj.lengthOfLongestSubstring("asdfghhhqwerty");
-            System.out.println(result);
-
-        }
 }
 

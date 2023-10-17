@@ -1,7 +1,13 @@
 package com.practice.problems;
 
-class SMSolution {
-    public int sumOfMultiples(int n) {
+public class SumMultiples {
+    public static void main(String[] args)
+    {
+
+        int result = SumMultiples.sumOfMultiples(7);
+        System.out.println(result);
+    }
+    public static int sumOfMultiples(int n) {
         int ans = 0;
         for (int i = 1; i <= n; i ++)
         {
@@ -11,15 +17,5 @@ class SMSolution {
             }
         }
         return ans;
-    }
-}
-public class SumMultiples {
-    public static void main(String[] args)
-    {
-        SMSolution obj = new SMSolution();
-
-        int result = obj.sumOfMultiples(7);
-
-        System.out.println(result);
     }
 }

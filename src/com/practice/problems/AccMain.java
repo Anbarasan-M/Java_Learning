@@ -17,17 +17,16 @@ class PalindromeSolution{
         int low = 0; int high = s.length()-1;
         int flag = 0;
         while(low<high){
-            if(s.charAt(low) == s.charAt(high)){
-                flag = 0;
-            }
-            else{
+            if(s.charAt(low) != s.charAt(high)){
                 flag = 1;
+                break;
             }
             low++;
             high--;
         }
+
         if(flag != 0){
-            checkPalindrome(both_sum);
+            return checkPalindrome(both_sum);
         }
         return both_sum;
     }
@@ -37,7 +36,7 @@ public class AccMain {
     public static void main(String[] args){
 
         PalindromeSolution obj = new PalindromeSolution();
-        int result = obj.checkPalindrome(122);
+        int result = obj.checkPalindrome(876);
         System.out.println(result);
     }
 }

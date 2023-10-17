@@ -3,8 +3,21 @@ package com.practice.problems;
 import java.util.ArrayList;
 import java.util.List;
 
-class SLTTSolution {
-    public int countPairs(List<Integer> nums, int target) {
+public class SumLessThanTarget
+{
+    public static void main(String[] args)
+    {
+        List <Integer> nums = new ArrayList<>();
+        nums.add(-1);
+        nums.add(1);
+        nums.add(2);
+        nums.add(3);
+        nums.add(1);
+
+        int result = SumLessThanTarget.countPairs(nums, 2);
+        System.out.println(result);
+    }
+    public static int countPairs(List<Integer> nums, int target) {
         int result = 0;
         int length = nums.size();
         for (int i = 0; i < length; i ++)
@@ -18,21 +31,5 @@ class SLTTSolution {
             }
         }
         return result;
-    }
-}
-public class SumLessThanTarget
-{
-    public static void main(String[] args)
-    {
-        List <Integer> nums = new ArrayList<>();
-        nums.add(-1);
-        nums.add(1);
-        nums.add(2);
-        nums.add(3);
-        nums.add(1);
-
-        SLTTSolution obj = new SLTTSolution();
-        int result = obj.countPairs(nums, 2);
-        System.out.println(result);
     }
 }

@@ -1,7 +1,11 @@
 package com.practice.problems;
 
-class SWKESolution {
-    public int maximizeSum(int[] nums, int k) {
+public class SumWithKElements {
+    public static void main(String[] args){
+        int result = SumWithKElements.maximizeSum(new int[]{1,2, 3, 4, 5}, 3);
+        System.out.println(result);
+    }
+    public static int maximizeSum(int[] nums, int k) {
         int max = nums[0];
         for(int n:nums){
             if(n>max){
@@ -14,12 +18,5 @@ class SWKESolution {
             count += max;
         }
         return count;
-    }
-}
-public class SumWithKElements {
-    public static void main(String[] args){
-        SWKESolution obj = new SWKESolution();
-        int result = obj.maximizeSum(new int[]{1,2, 3, 4, 5}, 3);
-        System.out.println(result);
     }
 }

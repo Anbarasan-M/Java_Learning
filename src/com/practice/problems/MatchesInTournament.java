@@ -1,10 +1,21 @@
 package com.practice.problems;
 
-
 import java.util.Scanner;
 
-class MIISolution {
-    public int numberOfMatches(int n) {
+
+public class MatchesInTournament {
+    public static void main(String[] args){
+
+        System.out.println("print number of matches");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int result = MatchesInTournament.numberOfMatches(n);
+
+        System.out.println(result);
+
+    }
+    public static int numberOfMatches(int n) {
         int matches_played = 0;
         while(n!=1){
             if(n%2==0){
@@ -18,21 +29,5 @@ class MIISolution {
             }
         }
         return matches_played;
-    }
-}
-
-public class MatchesInTournament {
-    public static void main(String[] args){
-
-        MIISolution kumaravel = new MIISolution();
-
-        System.out.println("print number of matches");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        int result = kumaravel.numberOfMatches(n);
-
-        System.out.println(result);
-
     }
 }

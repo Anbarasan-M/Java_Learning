@@ -14,6 +14,11 @@ package com.practice.fundamentals;
 //            while(org !=0){
 
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
 //                int num = i%10;
 //                if(temp_num == num){
 //                    temp_count += 1;
@@ -29,12 +34,23 @@ package com.practice.fundamentals;
 //
 //    }
 //}
-public class Sample {
-    public static void main(String[] args) {
+public class Sample{
+    public static void main(String[] args){
 
-        String s = Integer.toString(98+2);
-        System.out.println(s);
-
-
+        String name = "All is well and god is well";
+        String[] separated = name.split(" ");
+        System.out.println(Arrays.toString(separated));
+        Map<String, Integer> mapper = new HashMap<String, Integer>();
+        for(String word:separated){
+            if(mapper.containsKey(word)){
+                mapper.put(word, mapper.get(word)+1);
+            }
+            else{
+                mapper.put(word, 1);
+            }
+        }
+        int n = mapper.get("well");
+        System.out.println(n);
+        System.out.println(mapper);
     }
 }

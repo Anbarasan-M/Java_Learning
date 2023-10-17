@@ -5,7 +5,13 @@ import java.util.Arrays;
 
 public class CreateTargetArray
 {
-    public int[] createTargetArray(int[] nums, int[] index)
+    public static void main(String[] args)
+    {
+        int [] result = CreateTargetArray.createTargetArray(new int []{0, 1, 2, 3, 4},new int []{0, 1, 2, 2, 1});
+
+        System.out.println(Arrays.toString(result));
+    }
+    public static int[] createTargetArray(int[] nums, int[] index)
     {
         ArrayList<Integer> value = new ArrayList<Integer>();
         for (int i = 0; i < nums.length; i++) {
@@ -16,16 +22,5 @@ public class CreateTargetArray
             ans[i] = value.get(i);
         }
         return ans;
-    }
-}
-class CTASolution
-{
-    public static void main(String[] args)
-    {
-        CreateTargetArray obj = new CreateTargetArray();
-
-        int [] result = obj.createTargetArray(new int []{0, 1, 2, 3, 4},new int []{0, 1, 2, 2, 1});
-
-        System.out.println(Arrays.toString(result));
     }
 }

@@ -1,10 +1,14 @@
 package com.practice.problems;
 
-
 import java.util.HashSet;
 
-class LPSolution{
-    public int lpSolution(String s){
+public class LongestPalindrome {
+    public static void main(String[] args){
+
+        int result = LongestPalindrome.lpSolution("abccccdd");
+        System.out.println(result);
+    }
+    public static int lpSolution(String s){
         if(s==null || s.length()==0){return 0;}
         HashSet<Character> hs =  new HashSet<Character>();
         int count = 0;
@@ -20,15 +24,7 @@ class LPSolution{
             }
         }
         if(!hs.isEmpty()){return count*2+1;
-    }
+        }
         return count*2;
-}
-    }
-public class LongestPalindrome {
-    public static void main(String[] args){
-
-        LPSolution obj = new LPSolution();
-        int result = obj.lpSolution("abccccdd");
-        System.out.println(result);
     }
 }
