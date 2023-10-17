@@ -1,7 +1,11 @@
 package com.practice.problems;
 
-class BalSSolution {
-    public int balancedStringSplit(String s) {
+public class BalancedString {
+    public static void main(String[] args){
+
+        System.out.println(BalancedString.balancedStringSplit("LLRRLRRLL"));
+    }
+    public static int balancedStringSplit(String s) {
         int count = 0;
         int res = 0;
         for(int i=0; i<s.length(); i++){
@@ -16,12 +20,5 @@ class BalSSolution {
             }
         }
         return res;
-    }
-}
-public class BalancedString {
-    public static void main(String[] args){
-
-        BalSSolution obj = new BalSSolution();
-        System.out.println(obj.balancedStringSplit("LLRRLRRLL"));
     }
 }
