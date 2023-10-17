@@ -1,7 +1,10 @@
 package com.practice.problems;
 
-class BSSolution {
-    public int binarySearch(int[] arr, int key){
+public class BinarySearch{
+    public static void main(String[] args){
+        System.out.println(BinarySearch.binarySearch(new int[]{2, 3, 6, 7, 9, 10}, 3));
+    }
+    public static int binarySearch(int[] arr, int key){
         int low = 0;
         int high = arr.length-1;
         while(low<=high){
@@ -16,11 +19,5 @@ class BSSolution {
             }
         }
         return -1;
-    }
-}
-public class BinarySearch{
-    public static void main(String[] args){
-        BSSolution obj = new BSSolution();
-        System.out.println(obj.binarySearch(new int[]{2, 3, 6, 7, 9, 10}, 3));
     }
 }
