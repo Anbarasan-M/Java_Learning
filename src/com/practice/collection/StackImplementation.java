@@ -40,9 +40,6 @@ public class StackImplementation {
             System.out.print(n + " ");
         }
     }
-}
-class Run
-{
     public static void main(String[] args)
     {
         StackImplementation stack = new StackImplementation();
@@ -66,3 +63,4 @@ class Run
         stack.show();
     }
 }
+

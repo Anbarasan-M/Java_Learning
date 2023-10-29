@@ -8,7 +8,7 @@ abstract class Shape {
 }
 
 class Circle extends Shape {
-    private double radius;
+    private final double radius;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -21,8 +21,8 @@ class Circle extends Shape {
 }
 
 class Rectangle extends Shape {
-    private double width;
-    private double height;
+    private final double width;
+    private final double height;
 
     public Rectangle(double width, double height) {
         this.width = width;
@@ -36,8 +36,8 @@ class Rectangle extends Shape {
 }
 
 class Triangle extends Shape {
-    private double base;
-    private double height;
+    private final double base;
+    private final double height;
 
     public Triangle(double base, double height) {
         this.base = base;

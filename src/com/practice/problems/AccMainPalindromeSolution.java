@@ -1,8 +1,14 @@
 package com.practice.problems;
 
-class PalindromeSolution{
+public class AccMainPalindromeSolution {
 
-    public int checkPalindrome(int n){
+    public static void main(String[] args){
+
+        int result = AccMainPalindromeSolution.checkPalindrome(876);
+        System.out.println(result);
+    }
+
+    public static int checkPalindrome(int n){
 
         int org = n;
         int rev_n = 0;
@@ -29,14 +35,5 @@ class PalindromeSolution{
             return checkPalindrome(both_sum);
         }
         return both_sum;
-    }
-
-}
-public class AccMain {
-    public static void main(String[] args){
-
-        PalindromeSolution obj = new PalindromeSolution();
-        int result = obj.checkPalindrome(876);
-        System.out.println(result);
     }
 }

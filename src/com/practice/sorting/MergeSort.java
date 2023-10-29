@@ -1,5 +1,6 @@
 package com.practice.sorting;
 
+
 public class MergeSort {
     public static void mergeSort(int[] arr) {
         if (arr == null || arr.length <= 1) {
@@ -23,7 +24,6 @@ public class MergeSort {
         for (int i = low; i <= high; i++) {
             temp[i] = arr[i]; // Copy the elements to a temporary array
         }
-
         int i = low;
         int j = mid + 1;
         int k = low;
