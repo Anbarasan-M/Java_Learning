@@ -1,4 +1,4 @@
-package com.practice.JDBCConnection;
+package com.practice.jdbcconnection;
 import java.sql.*;
 
 public class MySqlConnection {
@@ -12,16 +12,16 @@ public class MySqlConnection {
 
         Statement st = con.createStatement();
 
-        ResultSet rs = st.executeQuery("select * from employees");
+        ResultSet rs = st.executeQuery("select * from players");
 
         while(rs.next()){
-            System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3)+" "+rs.getString(4)+" "+rs.getString(5)+" "+rs.getString(6));
+            System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3));
         }
 
         con.close();
         st.close();
 
-        }catch(Exception e){ System.out.println(e);}
+        }catch(Exception e){ System.out.println("Exception " + e );}
 
     }
 }

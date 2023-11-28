@@ -1,4 +1,4 @@
-package com.practice.JDBCConnection;
+package com.practice.jdbcconnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class JavaObjectConversion {
             st.close();
 
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("Connection failed due to " + e);
         }
     }
 }

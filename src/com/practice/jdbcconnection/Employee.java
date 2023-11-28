@@ -1,4 +1,4 @@
-package com.practice.JDBCConnection;
+package com.practice.jdbcconnection;
 
 public class Employee {
     private int id;
